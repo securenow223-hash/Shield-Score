@@ -31,11 +31,11 @@
             padding: 0 20px;
         }
 
-        /* Hero / Top Activation Section */
+        /* Top Activation Banner Wrapper */
         .top-activation-wrapper {
-            background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%);
+            background: #ffffff;
             color: #333;
-            padding: 80px 0;
+            padding: 60px 0;
             border-bottom: 4px solid var(--mcafee-red);
             text-align: center;
         }
@@ -44,9 +44,9 @@
             max-width: 800px;
             margin: 0 auto;
             background: #fff;
-            padding: 50px 40px;
-            border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.08);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
             border: 1px solid var(--border-color);
         }
 
@@ -62,24 +62,22 @@
             letter-spacing: 0.5px;
         }
 
-        .top-activation-wrapper h1 {
-            font-size: 2.5em;
+        .top-activation-wrapper h2 {
+            font-size: 1.8em;
             color: var(--text-heading);
             margin-top: 0;
             margin-bottom: 15px;
-            font-weight: 800;
-            letter-spacing: -0.5px;
         }
 
         .top-activation-wrapper p {
-            font-size: 1.25em;
+            font-size: 1.1em;
             color: var(--text-main);
             line-height: 1.6;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
         }
 
         .sub-text {
-            font-size: 1em;
+            font-size: 0.95em;
             color: #64748b;
             margin-bottom: 35px;
         }
@@ -89,30 +87,27 @@
             background-color: var(--mcafee-red);
             color: #fff;
             text-align: center;
-            padding: 18px 48px;
-            font-size: 1.25em;
+            padding: 16px 40px;
+            font-size: 1.2em;
             font-weight: bold;
             border: none;
-            border-radius: 6px;
+            border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
-            transition: all 0.2s ease;
-            box-shadow: 0 4px 14px rgba(204, 0, 0, 0.3);
+            transition: background-color 0.2s;
         }
 
         .btn-activate:hover {
             background-color: var(--mcafee-red-hover);
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(204, 0, 0, 0.4);
         }
 
         .secure-notice {
-            font-size: 0.95em;
+            font-size: 0.9em;
             color: #64748b;
             margin-top: 30px;
         }
 
-        /* Products Showcase Section */
+        /* Products Showcase Section (White Theme) */
         .products-section {
             padding: 80px 0;
             background: var(--secondary-bg);
@@ -191,7 +186,6 @@
 
         .btn-buy {
             display: block;
-            width: 100%;
             background-color: var(--mcafee-red);
             color: #fff;
             border: 1px solid var(--mcafee-red);
@@ -202,47 +196,151 @@
             font-weight: 600;
             cursor: pointer;
             transition: background-color 0.2s;
-            box-sizing: border-box;
         }
 
         .btn-buy:hover {
             background-color: var(--mcafee-red-hover);
         }
 
-        /* Info Section */
-        .content {
-            padding: 80px 0;
-            background: var(--primary-bg);
+        /* Purchase Modal Form Styling */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 23, 42, 0.6);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(4px);
         }
 
-        .hero-info {
-            text-align: center;
-            margin-bottom: 50px;
+        .modal-content {
+            background: #ffffff;
+            border: 1px solid var(--border-color);
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 500px;
+            width: 90%;
+            position: relative;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
         }
 
-        .hero-info h2 {
-            font-size: 2.5rem;
+        .modal-content h3 {
+            color: var(--text-heading);
+            margin-top: 0;
+            font-size: 1.6rem;
             margin-bottom: 15px;
+        }
+
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #64748b;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .close-modal:hover {
+            color: var(--text-heading);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-heading);
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            background: #f8fafc;
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            color: var(--text-heading);
+            font-size: 1rem;
+            box-sizing: border-box;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--mcafee-red);
+            background: #ffffff;
+        }
+
+        .btn-submit-order {
+            display: block;
+            width: 100%;
+            background-color: var(--mcafee-red);
+            color: #fff;
+            padding: 14px;
+            border: none;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        .btn-submit-order:hover {
+            background-color: var(--mcafee-red-hover);
+        }
+
+        /* Hero Content Section */
+        .hero {
+            padding: 80px 0;
+            text-align: center;
+            background: var(--primary-bg);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
             color: var(--text-heading);
             letter-spacing: -1px;
         }
 
-        .hero-info h2 span {
+        .hero h1 span {
             color: var(--mcafee-red);
         }
 
-        .hero-info p {
+        .hero p {
             color: var(--text-main);
-            font-size: 1.15rem;
+            font-size: 1.2rem;
             max-width: 750px;
             margin: 0 auto;
+        }
+
+        .content {
+            padding: 60px 0;
+            background: var(--primary-bg);
+        }
+
+        h2.section-title {
+            color: var(--text-heading);
+            font-size: 2rem;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            letter-spacing: -0.5px;
         }
 
         .metrics-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 20px;
-            margin: 40px 0;
+            margin: 30px 0;
         }
 
         .metric-card {
@@ -323,11 +421,8 @@
         }
 
         @media(max-width: 768px) {
-            .top-activation-wrapper h1 {
-                font-size: 1.8em;
-            }
-            .activation-box {
-                padding: 30px 20px;
+            .hero h1 {
+                font-size: 2.2rem;
             }
         }
     </style>
@@ -335,19 +430,26 @@
 
 <body>
 
-<html>
-<body>
-<div>
-<html>
-<body>
-<div>
-<p><a href="https://setupsecure321.wixsite.com/mcafeesetup"><img src="shield_and_secure.jpg" alt="Banner" width="1350" height="400"></a></p>
-</div>
-</body>
-</html>
-</div>
-</body>
-</html>
+<!-- TOP ACTIVATION SECTION -->
+<div class="top-activation-wrapper">
+  <div class="container">
+    <div class="activation-box">
+      <div class="portal-badge">
+        <span>Activate Your Subscription</span>
+      </div>
+
+      <h2>Activate Your McAfee Subscription Today</h2>
+      <p>Redeem your product key or download your security product securely through the official activation channel.</p>
+      
+      <div class="sub-text">
+        Already redeemed your product key? Download your app from My Account.
+      </div>
+
+      <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-activate">Enter product key</a>
+      
+      <div class="secure-notice">
+        🔒 You will be securely redirected to the official McAfee portal to complete your activation.
+      </div>
     </div>
   </div>
 </div>
@@ -357,7 +459,7 @@
   <div class="container">
     <div class="section-header">
       <h2>McAfee® Total Protection</h2>
-      <p>All-in-one security suite for your digital life. Includes AI Scam Detector, premium antivirus, identity protection, and Secure VPN.</p>
+      <p>All-in-one protection for your personal info and privacy, so you can enjoy life online. Includes two years of AI-powered Scam Detector, premium antivirus, identity monitoring, and Secure VPN.</p>
     </div>
 
     <div class="products-grid">
@@ -369,7 +471,7 @@
         </div>
         <div>
           <div class="product-price">$29.99 <span>/ 1 Year</span></div>
-          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+          <button class="btn-buy" onclick="openCheckout('Total Protection - Essential', '$29.99')">Buy Now</button>
         </div>
       </div>
 
@@ -381,7 +483,7 @@
         </div>
         <div>
           <div class="product-price">$39.99 <span>/ 1 Year</span></div>
-          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+          <button class="btn-buy" onclick="openCheckout('Total Protection - Individual', '$39.99')">Buy Now</button>
         </div>
       </div>
 
@@ -393,7 +495,7 @@
         </div>
         <div>
           <div class="product-price">$49.99 <span>/ 1 Year</span></div>
-          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+          <button class="btn-buy" onclick="openCheckout('Total Protection - Family Suite', '$49.99')">Buy Now</button>
         </div>
       </div>
 
@@ -405,7 +507,7 @@
         </div>
         <div>
           <div class="product-price">$69.99 <span>/ 1 Year</span></div>
-          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+          <button class="btn-buy" onclick="openCheckout('Advanced Protection Bundle', '$69.99')">Buy Now</button>
         </div>
       </div>
 
@@ -417,10 +519,43 @@
         </div>
         <div>
           <div class="product-price">$89.99 <span>/ 2 Years</span></div>
-          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+          <button class="btn-buy" onclick="openCheckout('Ultimate Security 2-Year Plan', '$89.99')">Buy Now</button>
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Purchase Form Modal -->
+<div id="checkoutModal" class="modal-overlay">
+  <div class="modal-content">
+    <button class="close-modal" onclick="closeCheckout()">&times;</button>
+    <h3 id="modalProductTitle">Secure Checkout</h3>
+    <p style="font-size: 0.95rem; color: var(--text-main); margin-bottom: 20px;">Complete your reservation form below to secure your software license.</p>
+    
+    <form id="purchaseForm" onsubmit="handleCheckoutSubmit(event)">
+      <div class="form-group">
+        <label for="buyerName">Full Name</label>
+        <input type="text" id="buyerName" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="buyerEmail">Email Address (for License Key delivery)</label>
+        <input type="email" id="buyerEmail" required placeholder="name@example.com">
+      </div>
+      <div class="form-group">
+        <label for="buyerPhone">Phone Number</label>
+        <input type="tel" id="buyerPhone" required placeholder="Enter phone number">
+      </div>
+      <button type="submit" class="btn-submit-order">Proceed to Secure Payment</button>
+    </form>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Empirical Security Intelligence & <span>Antivirus Audits</span></h1>
+    <p>Eliminating marketing noise through rigorous telemetry benchmarking, active hardware isolation testing, and objective software evaluations.</p>
   </div>
 </section>
 
@@ -428,13 +563,8 @@
 <section class="content">
   <div class="container">
 
-    <div class="hero-info">
-      <h2>Empirical Security Intelligence & <span>Antivirus Audits</span></h2>
-      <p>Eliminating marketing noise through rigorous telemetry benchmarking, active hardware isolation testing, and objective software evaluations.</p>
-    </div>
-
-    <h2 style="text-align: center; font-size: 2rem; color: var(--text-heading); margin-bottom: 20px;">🛡️ Independent Endpoint Testing Architecture</h2>
-    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
+    <h2 class="section-title">🛡️ Independent Endpoint Testing Architecture</h2>
+    <p>
       At <strong>Shield & Score</strong>, our technical research group provides transparent, laboratory-tested performance analyses for contemporary cybersecurity software. We reject unverified claims and superficial summaries, focusing instead on granular behavioral monitoring, signature reaction times, and real resource consumption metrics under live operating loads.
     </p>
 
@@ -482,6 +612,24 @@
 
   </div>
 </footer>
+
+<!-- JavaScript for Modal Control -->
+<script>
+  function openCheckout(productName, price) {
+    document.getElementById('modalProductTitle').innerText = 'Checkout: ' + productName + ' (' + price + ')';
+    document.getElementById('checkoutModal').style.display = 'flex';
+  }
+
+  function closeCheckout() {
+    document.getElementById('checkoutModal').style.display = 'none';
+  }
+
+  function handleCheckoutSubmit(event) {
+    event.preventDefault();
+    alert('Thank you! Redirecting to secure encrypted payment gateway...');
+    closeCheckout();
+  }
+</script>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
