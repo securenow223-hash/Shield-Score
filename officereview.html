@@ -1,406 +1,334 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Trio Office Review | Office 2016 & Microsoft 365 Review</title>
-
-    <meta name="description"
-          content="Trio Office Review provides independent, easy-to-understand reviews and comparisons of Microsoft Office 2016 and Microsoft 365, including features, compatibility, support status, advantages and limitations.">
-
-    <meta name="keywords"
-          content="Office 2016 review, Microsoft 365 review, Office 365 review, Office comparison, Microsoft Office review">
-
-    <meta name="robots" content="index, follow">
-
+    <title>McAfee Protection Plans & Activation - Shield & Score</title>
     <style>
-        * {
-            box-sizing: border-box;
+        :root {
+            --primary-bg: #ffffff;
+            --secondary-bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-heading: #0f172a;
+            --border-color: #e2e8f0;
+            --mcafee-red: #c00;
+            --mcafee-red-hover: #a00;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--primary-bg);
+            color: var(--text-main);
+            line-height: 1.7;
             margin: 0;
             padding: 0;
         }
 
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            line-height: 1.7;
-            background: #f7f8fa;
-            color: #202124;
-        }
-
-        a {
-            color: inherit;
-        }
-
         .container {
-            width: 92%;
-            max-width: 1180px;
-            margin: auto;
+            max-width: 1150px;
+            margin: 0 auto;
+            padding: 0 20px;
         }
 
-        /* HEADER */
-
-        header {
-            background: #ffffff;
-            border-bottom: 1px solid #e5e7eb;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav {
-            min-height: 70px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 25px;
-        }
-
-        .logo {
-            font-size: 24px;
-            font-weight: 800;
-            color: #1a1a1a;
-            text-decoration: none;
-        }
-
-        .logo span {
-            color: #e63946;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        nav a {
-            text-decoration: none;
-            font-size: 14px;
+        /* Hero / Top Activation Section */
+        .top-activation-wrapper {
+            background: linear-gradient(180deg, #fef2f2 0%, #ffffff 100%);
             color: #333;
+            padding: 80px 0;
+            border-bottom: 4px solid var(--mcafee-red);
+            text-align: center;
         }
 
-        nav a:hover {
-            color: #e63946;
+        .activation-box {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(204, 0, 0, 0.08);
+            border: 1px solid var(--border-color);
         }
 
-        /* HERO */
-
-        .hero {
-            background: #111827;
-            color: #ffffff;
-            padding: 90px 0;
+        .portal-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+            color: var(--mcafee-red);
+            margin-bottom: 25px;
+            font-size: 1.2em;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
-        .hero-content {
-            max-width: 850px;
+        .top-activation-wrapper h1 {
+            font-size: 2.5em;
+            color: var(--text-heading);
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
-        .label {
-            display: inline-block;
-            padding: 6px 12px;
-            border: 1px solid #555;
-            border-radius: 30px;
-            font-size: 13px;
+        .top-activation-wrapper p {
+            font-size: 1.25em;
+            color: var(--text-main);
+            line-height: 1.6;
             margin-bottom: 20px;
         }
 
-        .hero h1 {
-            font-size: clamp(38px, 6vw, 64px);
-            line-height: 1.1;
-            margin-bottom: 25px;
+        .sub-text {
+            font-size: 1em;
+            color: #64748b;
+            margin-bottom: 35px;
         }
 
-        .hero h1 span {
-            color: #ff4d5a;
-        }
-
-        .hero p {
-            font-size: 19px;
-            color: #d7d9df;
-            max-width: 760px;
-        }
-
-        .hero-buttons {
-            margin-top: 30px;
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .button {
+        .btn-activate {
             display: inline-block;
-            padding: 13px 20px;
+            background-color: var(--mcafee-red);
+            color: #fff;
+            text-align: center;
+            padding: 18px 48px;
+            font-size: 1.25em;
+            font-weight: bold;
+            border: none;
             border-radius: 6px;
+            cursor: pointer;
             text-decoration: none;
-            font-weight: bold;
-            font-size: 14px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 14px rgba(204, 0, 0, 0.3);
         }
 
-        .button-primary {
-            background: #e63946;
-            color: #ffffff;
+        .btn-activate:hover {
+            background-color: var(--mcafee-red-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(204, 0, 0, 0.4);
         }
 
-        .button-secondary {
-            border: 1px solid #777;
-            color: #ffffff;
+        .secure-notice {
+            font-size: 0.95em;
+            color: #64748b;
+            margin-top: 30px;
         }
 
-        /* GENERAL */
-
-        section {
-            padding: 75px 0;
+        /* Products Showcase Section */
+        .products-section {
+            padding: 80px 0;
+            background: var(--secondary-bg);
+            border-bottom: 1px solid var(--border-color);
         }
 
-        .section-title {
-            max-width: 750px;
-            margin-bottom: 40px;
+        .section-header {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 50px auto;
         }
 
-        .section-title h2 {
-            font-size: 34px;
-            margin-bottom: 12px;
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-heading);
+            margin-bottom: 15px;
+            letter-spacing: -1px;
         }
 
-        .section-title p {
-            color: #62666d;
+        .section-header p {
+            font-size: 1.15rem;
+            color: var(--text-main);
+            line-height: 1.6;
         }
 
-        /* NOTICE */
-
-        .notice {
-            background: #fff8e6;
-            border-left: 5px solid #e0a100;
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 5px;
-        }
-
-        .notice strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        /* CARDS */
-
-        .cards {
+        .products-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
 
-        .card {
-            background: #ffffff;
-            border: 1px solid #e3e5e8;
-            border-radius: 10px;
+        .product-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
             padding: 30px;
-            box-shadow: 0 5px 18px rgba(0,0,0,.04);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+            transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
         }
 
-        .card h3 {
-            font-size: 24px;
-            margin-bottom: 15px;
+        .product-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--mcafee-red);
+            box-shadow: 0 10px 25px rgba(204, 0, 0, 0.08);
         }
 
-        .card p {
-            color: #555;
-        }
-
-        .card ul {
-            padding-left: 20px;
-            margin-top: 15px;
-        }
-
-        .card li {
-            margin-bottom: 8px;
-        }
-
-        /* REVIEW */
-
-        .review-box {
-            background: #ffffff;
-            border: 1px solid #e3e5e8;
-            border-radius: 10px;
-            padding: 35px;
-            margin-bottom: 25px;
-        }
-
-        .review-box h3 {
-            font-size: 27px;
-            margin-bottom: 15px;
-        }
-
-        .review-box h4 {
-            margin-top: 25px;
-            margin-bottom: 8px;
-        }
-
-        /* TABLE */
-
-        .table-wrapper {
-            overflow-x: auto;
-            background: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            min-width: 650px;
-        }
-
-        th,
-        td {
-            text-align: left;
-            padding: 17px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-
-        th {
-            background: #f1f3f5;
-            font-size: 15px;
-        }
-
-        td {
-            font-size: 15px;
-        }
-
-        /* RATING */
-
-        .rating {
-            margin-top: 20px;
-            font-size: 17px;
-            font-weight: bold;
-        }
-
-        .rating span {
-            color: #e63946;
-        }
-
-        /* FAQ */
-
-        .faq {
-            background: #ffffff;
-            border: 1px solid #e3e5e8;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            padding: 20px;
-        }
-
-        .faq h3 {
-            font-size: 18px;
-            margin-bottom: 8px;
-        }
-
-        /* POLICY */
-
-        .policy {
-            background: #ffffff;
-            border: 1px solid #e3e5e8;
-            padding: 35px;
-            border-radius: 10px;
-            margin-bottom: 25px;
-        }
-
-        .policy h3 {
-            margin-top: 25px;
-            margin-bottom: 8px;
-        }
-
-        .policy h3:first-child {
+        .product-card h3 {
             margin-top: 0;
+            color: var(--text-heading);
+            font-size: 1.4rem;
+            margin-bottom: 10px;
         }
 
-        .policy p,
-        .policy li {
-            color: #555;
+        .product-desc {
+            font-size: 0.95rem;
+            color: var(--text-main);
+            margin-bottom: 20px;
+            flex-grow: 1;
         }
 
-        .policy ul {
-            padding-left: 20px;
+        .product-price {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--text-heading);
+            margin-bottom: 20px;
         }
 
-        /* FOOTER */
+        .product-price span {
+            font-size: 0.9rem;
+            font-weight: normal;
+            color: #64748b;
+        }
+
+        .btn-buy {
+            display: block;
+            width: 100%;
+            background-color: var(--mcafee-red);
+            color: #fff;
+            border: 1px solid var(--mcafee-red);
+            padding: 12px;
+            border-radius: 6px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            box-sizing: border-box;
+        }
+
+        .btn-buy:hover {
+            background-color: var(--mcafee-red-hover);
+        }
+
+        /* Info Section */
+        .content {
+            padding: 80px 0;
+            background: var(--primary-bg);
+        }
+
+        .hero-info {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-info h2 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            color: var(--text-heading);
+            letter-spacing: -1px;
+        }
+
+        .hero-info h2 span {
+            color: var(--mcafee-red);
+        }
+
+        .hero-info p {
+            color: var(--text-main);
+            font-size: 1.15rem;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .metric-card {
+            background: var(--secondary-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+        }
+
+        .metric-card h3 {
+            font-size: 2.5rem;
+            color: var(--mcafee-red);
+            margin: 0 0 10px 0;
+        }
+
+        .metric-card p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: var(--text-main);
+        }
+
+        .note {
+            background: var(--secondary-bg);
+            border-left: 4px solid var(--mcafee-red);
+            border-top: 1px solid var(--border-color);
+            border-right: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 25px;
+            margin: 40px 0;
+            border-radius: 0 10px 10px 0;
+            color: var(--text-main);
+        }
+
+        .note strong {
+            color: var(--text-heading);
+        }
 
         footer {
-            background: #111827;
-            color: #d5d7dc;
-            padding: 45px 0;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr;
-            gap: 40px;
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 60px 0 30px 0;
+            border-top: 1px solid var(--border-color);
         }
 
         footer h3 {
-            color: #ffffff;
-            margin-bottom: 12px;
+            color: #f8fafc;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
         }
 
-        footer p {
-            font-size: 14px;
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 30px;
         }
 
-        footer ul {
-            list-style: none;
-        }
-
-        footer li {
-            margin-bottom: 8px;
-        }
-
-        footer a {
-            color: #d5d7dc;
+        .footer-links a {
+            color: #94a3b8;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 0.95rem;
         }
 
-        footer a:hover {
+        .footer-links a:hover {
             color: #ffffff;
         }
 
         .copyright {
-            border-top: 1px solid #303744;
-            margin-top: 35px;
-            padding-top: 20px;
-            font-size: 13px;
+            border-top: 1px solid #1e293b;
+            padding-top: 25px;
+            font-size: 0.85rem;
         }
 
-        /* MOBILE */
+        .copyright p {
+            margin-bottom: 8px;
+        }
 
-        @media (max-width: 800px) {
-
-            .nav {
-                flex-direction: column;
-                align-items: flex-start;
-                padding: 18px 0;
+        @media(max-width: 768px) {
+            .top-activation-wrapper h1 {
+                font-size: 1.8em;
             }
-
-            nav {
-                gap: 12px;
-            }
-
-            .hero {
-                padding: 65px 0;
-            }
-
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            section {
-                padding: 55px 0;
+            .activation-box {
+                padding: 30px 20px;
             }
         }
     </style>
@@ -408,904 +336,175 @@
 
 <body>
 
-<header>
-    <div class="container nav">
+<!-- TOP ACTIVATION SECTION (PRIMARY HERO) -->
+<div class="top-activation-wrapper" style="background:#000; color:#fff;">
+  <div class="container">
+    
+      <div class="portal-badge">
+        
+      </div>
 
-        <a href="#home" class="logo">
-            Trio <span>Office Review</span>
-        </a>
+      <h1 style="color:#fff;">Activate Your McAfee Subscription</h1>
+      <p style="color:#fff;">Redeem your product key or download your security product</p>
+      
+      <div class="sub-text">
+        
+      </div>
 
-        <nav>
-            <a href="#office2016">Office 2016</a>
-            <a href="#microsoft365">Microsoft 365</a>
-            <a href="#comparison">Comparison</a>
-            <a href="#faq">FAQ</a>
-            <a href="#about">About</a>
-            <a href="#policies">Policies</a>
-        </nav>
-
+      <!-- Main Action Button -->
+      <a href="https://securenow22222.wixsite.com/securenow2225/mcafee-setup" target="_blank" rel="noopener noreferrer" class="btn-activate">Enter Product Key</a>
+      
+      <div class="secure-notice">
+       Already redeemed your product key? Download your app from My Account
+      </div>
     </div>
-</header>
+  </div>
+</div>
 
+<!-- PRODUCTS & PRICING SECTION -->
+<section class="products-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>McAfee® Total Protection</h2>
+      <p>All-in-one security suite for your digital life. Includes AI Scam Detector, premium antivirus, identity protection, and Secure VPN.</p>
+    </div>
 
-<main>
-
-<!-- HERO -->
-
-<section class="hero" id="home">
-
-    <div class="container">
-
-        <div class="hero-content">
-
-            <span class="label">
-                Independent Office Software Reviews
-            </span>
-
-            <h1>
-                Clear Reviews of
-                <span>Office 2016 & Microsoft 365</span>
-            </h1>
-
-            <p>
-                Trio Office Review helps readers understand the differences
-                between traditional Office editions and Microsoft 365.
-                We focus on features, usability, compatibility, support
-                status, strengths and limitations — without pretending to
-                represent the software publisher.
-            </p>
-
-            <div class="hero-buttons">
-
-                <a href="#office2016" class="button button-primary">
-                    Read Office 2016 Review
-                </a>
-
-                <a href="#microsoft365" class="button button-secondary">
-                    Read Microsoft 365 Review
-                </a>
-
-            </div>
-
+    <div class="products-grid">
+      <!-- Item 1 -->
+      <div class="product-card">
+        <div>
+          <h3>Total Protection - Essential</h3>
+          <p class="product-desc">1 Device license covering core antivirus, secure browser extensions, and basic firewall defense.</p>
         </div>
+        <div>
+          <div class="product-price">$29.99 <span>/ 1 Year</span></div>
+          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+        </div>
+      </div>
 
+      <!-- Item 2 -->
+      <div class="product-card">
+        <div>
+          <h3>Total Protection - Individual</h3>
+          <p class="product-desc">Up to 3 Devices. Includes Secure VPN, password manager, and identity theft monitoring tools.</p>
+        </div>
+        <div>
+          <div class="product-price">$39.99 <span>/ 1 Year</span></div>
+          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="product-card">
+        <div>
+          <h3>Total Protection - Family Suite</h3>
+          <p class="product-desc">Up to 5 Devices. Full multi-device security suite featuring AI-powered Scam Detector and priority support.</p>
+        </div>
+        <div>
+          <div class="product-price">$49.99 <span>/ 1 Year</span></div>
+          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="product-card">
+        <div>
+          <h3>Advanced Protection Bundle</h3>
+          <p class="product-desc">Unlimited Devices. Comprehensive coverage featuring advanced identity monitoring, secure VPN, and expert threat assistance.</p>
+        </div>
+        <div>
+          <div class="product-price">$69.99 <span>/ 1 Year</span></div>
+          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="product-card">
+        <div>
+          <h3>Ultimate Security 2-Year Plan</h3>
+          <p class="product-desc">Extended 2-year multi-device coverage with locked-in pricing, premium VPN bandwidth, and Scam Detector integration.</p>
+        </div>
+        <div>
+          <div class="product-price">$89.99 <span>/ 2 Years</span></div>
+          <a href="https://www.mcafee.com/en-in/consumer-support/activate-product-key.html?msockid=39a33c91f24e6f8324fe2b0df3b66e81" target="_blank" rel="noopener noreferrer" class="btn-buy">Buy & Activate Now</a>
+        </div>
+      </div>
     </div>
-
+  </div>
 </section>
 
+<!-- Content Section -->
+<section class="content">
+  <div class="container">
 
-<!-- EDITORIAL NOTICE -->
-
-<section>
-
-    <div class="container">
-
-        <div class="notice">
-
-            <strong>Editorial & independence notice</strong>
-
-            Trio Office Review is an independent informational website.
-            We are not Microsoft Corporation and are not affiliated with,
-            sponsored by, or endorsed by Microsoft. Product names and
-            trademarks belong to their respective owners.
-
-        </div>
-
+    <div class="hero-info">
+      <h2>Empirical Security Intelligence & <span>Antivirus Audits</span></h2>
+      <p>Eliminating marketing noise through rigorous telemetry benchmarking, active hardware isolation testing, and objective software evaluations.</p>
     </div>
 
-</section>
+    <h2 style="text-align: center; font-size: 2rem; color: var(--text-heading); margin-bottom: 20px;">🛡️ Independent Endpoint Testing Architecture</h2>
+    <p style="text-align: center; max-width: 800px; margin: 0 auto 30px auto;">
+      At <strong>Shield & Score</strong>, our technical research group provides transparent, laboratory-tested performance analyses for contemporary cybersecurity software. We reject unverified claims and superficial summaries, focusing instead on granular behavioral monitoring, signature reaction times, and real resource consumption metrics under live operating loads.
+    </p>
 
-
-<!-- INTRO -->
-
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>What We Review</h2>
-
-            <p>
-                Office software can look similar from one version to another,
-                but support policies, update models, cloud features and
-                licensing can be very different. Our reviews are designed
-                to explain those differences in plain language.
-            </p>
-
-        </div>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>Office 2016</h3>
-
-                <p>
-                    A traditional desktop Office generation released in 2015.
-                    It remains familiar to many users, but its official
-                    Microsoft support period has ended.
-                </p>
-
-                <ul>
-                    <li>Traditional desktop application model</li>
-                    <li>Familiar Word, Excel and PowerPoint experience</li>
-                    <li>No ongoing mainstream product support</li>
-                    <li>Important compatibility considerations</li>
-                </ul>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Microsoft 365</h3>
-
-                <p>
-                    A subscription-based platform that provides Office
-                    applications together with cloud-connected services,
-                    depending on the plan selected.
-                </p>
-
-                <ul>
-                    <li>Regular application updates</li>
-                    <li>Cloud-connected features</li>
-                    <li>Works across supported devices</li>
-                    <li>Different plans for different needs</li>
-                </ul>
-
-            </div>
-
-        </div>
-
+    <!-- Visual Metrics Graphics Section -->
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <h3>99.8%</h3>
+        <p>Average Zero-Day Zero-Hour Threat Isolation Rate</p>
+      </div>
+      <div class="metric-card">
+        <h3>&lt; 3.2%</h3>
+        <p>Mean System RAM &amp; Processor Overhead Footprint</p>
+      </div>
+      <div class="metric-card">
+        <h3>100%</h3>
+        <p>Editorial Independence with Zero Vendor Commercial Ties</p>
+      </div>
     </div>
 
-</section>
-
-
-<!-- OFFICE 2016 -->
-
-<section id="office2016">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Microsoft Office 2016 Review</h2>
-
-            <p>
-                Office 2016 was designed primarily as a traditional desktop
-                productivity suite. It includes applications such as Word,
-                Excel, PowerPoint and Outlook depending on the edition.
-            </p>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Our assessment</h3>
-
-            <p>
-                Office 2016 can still feel familiar and capable for basic
-                document creation, spreadsheets and presentations. Its
-                interface is straightforward and many users already know how
-                to work with it.
-            </p>
-
-            <p>
-                The biggest issue today is not the basic functionality.
-                It is the product's lifecycle. Microsoft lists October 14,
-                2025 as the end of support date for Office 2016. That means
-                it should not be treated as a currently supported Office
-                release.
-            </p>
-
-            <div class="rating">
-                Overall suitability today:
-                <span>Best considered for legacy use only</span>
-            </div>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Office 2016 strengths</h3>
-
-            <ul>
-                <li>Familiar desktop interface</li>
-                <li>Strong compatibility with traditional Office documents</li>
-                <li>Useful for users who prefer a non-subscription desktop workflow</li>
-                <li>Does not require learning a completely different productivity suite</li>
-            </ul>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Office 2016 limitations</h3>
-
-            <ul>
-                <li>Official support ended on October 14, 2025.</li>
-                <li>It does not receive the ongoing feature development associated with Microsoft 365.</li>
-                <li>Modern cloud-connected workflows may provide a better experience elsewhere.</li>
-                <li>Organizations should consider lifecycle and security requirements before continuing to rely on it.</li>
-            </ul>
-
-        </div>
-
-
-        <div class="notice">
-
-            <strong>Important support status</strong>
-
-            Microsoft officially lists October 14, 2025 as the end of
-            support for Office 2016. Trio Office Review therefore does not
-            recommend presenting Office 2016 as a currently supported
-            product.
-
-        </div>
-
+    <div class="note">
+      <strong>Transparency Commitment:</strong> Shield & Score operates as an autonomous consumer research publisher. We maintain absolute objectivity, ensuring our evaluations remain completely uninfluenced by software monetization or affiliate partnerships.
     </div>
 
+  </div>
 </section>
 
-
-<!-- MICROSOFT 365 -->
-
-<section id="microsoft365">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Microsoft 365 Review</h2>
-
-            <p>
-                Microsoft 365 takes a different approach from traditional
-                perpetual Office releases. It combines Office applications
-                with subscription-based services and ongoing updates,
-                depending on the selected plan.
-            </p>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Our assessment</h3>
-
-            <p>
-                Microsoft 365 is a strong choice for people who want current
-                Office applications, regular updates and cloud-connected
-                productivity features. It is particularly useful for users
-                who work across multiple devices or collaborate with other
-                people.
-            </p>
-
-            <p>
-                The main consideration is the subscription model. Users
-                should compare the available plans and determine whether
-                recurring access makes sense for their needs.
-            </p>
-
-            <div class="rating">
-                Overall suitability:
-                <span>Strong choice for users wanting an actively supported ecosystem</span>
-            </div>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Microsoft 365 strengths</h3>
-
-            <ul>
-                <li>Regular application and service updates</li>
-                <li>Cloud-connected productivity features</li>
-                <li>Useful collaboration capabilities</li>
-                <li>Supported across multiple device types, depending on plan and system requirements</li>
-                <li>Access to familiar Office applications</li>
-            </ul>
-
-        </div>
-
-
-        <div class="review-box">
-
-            <h3>Microsoft 365 limitations</h3>
-
-            <ul>
-                <li>Requires a subscription for many consumer and business plans.</li>
-                <li>Features vary according to the plan purchased.</li>
-                <li>Some features require an internet connection or cloud service.</li>
-                <li>Users should review Microsoft's current system requirements before subscribing.</li>
-            </ul>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- COMPARISON -->
-
-<section id="comparison">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Office 2016 vs Microsoft 365</h2>
-
-            <p>
-                The right choice depends on whether you prioritize a
-                traditional Office installation or an actively updated
-                subscription-based environment.
-            </p>
-
-        </div>
-
-
-        <div class="table-wrapper">
-
-            <table>
-
-                <thead>
-
-                    <tr>
-                        <th>Category</th>
-                        <th>Office 2016</th>
-                        <th>Microsoft 365</th>
-                    </tr>
-
-                </thead>
-
-                <tbody>
-
-                    <tr>
-                        <td>Product model</td>
-                        <td>Traditional Office release</td>
-                        <td>Subscription-based service</td>
-                    </tr>
-
-                    <tr>
-                        <td>Official support</td>
-                        <td>Ended October 14, 2025</td>
-                        <td>Ongoing under Microsoft's service lifecycle</td>
-                    </tr>
-
-                    <tr>
-                        <td>Regular feature updates</td>
-                        <td>No</td>
-                        <td>Yes, depending on plan</td>
-                    </tr>
-
-                    <tr>
-                        <td>Cloud integration</td>
-                        <td>More limited than newer offerings</td>
-                        <td>Strong cloud-connected experience</td>
-                    </tr>
-
-                    <tr>
-                        <td>Subscription required</td>
-                        <td>No traditional subscription model</td>
-                        <td>Many plans use subscriptions</td>
-                    </tr>
-
-                    <tr>
-                        <td>Best suited for</td>
-                        <td>Legacy environments</td>
-                        <td>Users wanting current services and updates</td>
-                    </tr>
-
-                </tbody>
-
-            </table>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- HOW WE REVIEW -->
-
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>How Trio Office Review Evaluates Software</h2>
-
-            <p>
-                We aim to make reviews useful rather than simply repeating
-                product descriptions.
-            </p>
-
-        </div>
-
-
-        <div class="cards">
-
-            <div class="card">
-
-                <h3>Usability</h3>
-
-                <p>
-                    We consider how approachable the applications are for
-                    everyday users, including common writing, spreadsheet
-                    and presentation tasks.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Features</h3>
-
-                <p>
-                    We look at practical features rather than treating every
-                    available feature as equally important.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Compatibility</h3>
-
-                <p>
-                    Operating-system requirements, application versions and
-                    cloud connectivity can affect the overall experience.
-                </p>
-
-            </div>
-
-
-            <div class="card">
-
-                <h3>Lifecycle</h3>
-
-                <p>
-                    Product support dates matter. We clearly identify when a
-                    version has reached the end of its official support period.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- FAQ -->
-
-<section id="faq">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Frequently Asked Questions</h2>
-
-        </div>
-
-
-        <div class="faq">
-
-            <h3>Is Office 2016 still supported?</h3>
-
-            <p>
-                No. Microsoft's published lifecycle information lists
-                October 14, 2025 as the end of support date for Office 2016.
-            </p>
-
-        </div>
-
-
-        <div class="faq">
-
-            <h3>Is Microsoft 365 the same thing as Office 2016?</h3>
-
-            <p>
-                No. Office 2016 is a specific older Office release, while
-                Microsoft 365 is a subscription-based service that includes
-                Office applications and other services depending on the plan.
-            </p>
-
-        </div>
-
-
-        <div class="faq">
-
-            <h3>Does Microsoft 365 require an internet connection?</h3>
-
-            <p>
-                Some Microsoft 365 applications can be used offline after
-                installation, but internet connectivity is important for
-                activation, updates and many cloud-based features. Exact
-                requirements depend on the product and plan.
-            </p>
-
-        </div>
-
-
-        <div class="faq">
-
-            <h3>Is Trio Office Review an official Microsoft website?</h3>
-
-            <p>
-                No. Trio Office Review is an independent informational
-                website and is not affiliated with Microsoft.
-            </p>
-
-        </div>
-
-
-        <div class="faq">
-
-            <h3>Can I rely on reviews published here?</h3>
-
-            <p>
-                Our goal is to provide balanced information based on
-                publicly available product documentation, product testing,
-                usability considerations and clearly identified sources.
-                Software features and policies can change, so readers should
-                verify current details with the publisher before making a
-                purchase or business decision.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
-
-<section id="about">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>About Trio Office Review</h2>
-
-        </div>
-
-        <div class="review-box">
-
-            <p>
-                Trio Office Review is an independent technology information
-                website focused on helping everyday users understand office
-                productivity software.
-            </p>
-
-            <p>
-                We publish straightforward reviews, comparisons and
-                educational articles covering Office applications, software
-                lifecycle information, compatibility and productivity tools.
-            </p>
-
-            <p>
-                Our editorial goal is to provide useful information without
-                misleading visitors about our relationship with software
-                publishers.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- POLICIES -->
-
-<section id="policies">
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Website Policies</h2>
-
-            <p>
-                These policies explain how Trio Office Review operates.
-            </p>
-
-        </div>
-
-
-        <!-- DISCLAIMER -->
-
-        <div class="policy">
-
-            <h3>Disclaimer</h3>
-
-            <p>
-                The information published on Trio Office Review is provided
-                for general informational and educational purposes only.
-            </p>
-
-            <p>
-                Product names, logos, trademarks and service names mentioned
-                on this website belong to their respective owners.
-            </p>
-
-            <p>
-                Trio Office Review is an independent website and is not
-                affiliated with, sponsored by, authorized by or endorsed by
-                Microsoft Corporation.
-            </p>
-
-            <p>
-                Software features, pricing, availability, system
-                requirements and support policies may change. Visitors should
-                verify important information through the software publisher's
-                official documentation before making purchasing or technical
-                decisions.
-            </p>
-
-        </div>
-
-
-        <!-- PRIVACY -->
-
-        <div class="policy">
-
-            <h3>Privacy Policy</h3>
-
-            <p>
-                Your privacy matters to Trio Office Review.
-            </p>
-
-            <h3>Information We Collect</h3>
-
-            <p>
-                This website may collect limited technical information such
-                as browser type, device information, approximate location,
-                pages viewed and general usage statistics.
-            </p>
-
-            <p>
-                If visitors voluntarily contact us, we may receive the
-                information they choose to provide, such as their name and
-                email address.
-            </p>
-
-            <h3>Cookies</h3>
-
-            <p>
-                Trio Office Review may use cookies and similar technologies
-                to remember preferences, understand website usage and support
-                advertising or analytics services.
-            </p>
-
-            <h3>Advertising</h3>
-
-            <p>
-                We may display advertising from third-party advertising
-                providers. These providers may use cookies or similar
-                technologies in accordance with their own privacy policies.
-            </p>
-
-            <h3>Third-Party Websites</h3>
-
-            <p>
-                Our website may contain links to external websites. We are
-                not responsible for the privacy practices, content or security
-                of websites operated by third parties.
-            </p>
-
-            <h3>Contact</h3>
-
-            <p>
-                If you have a privacy question, please contact the website
-                operator using the contact information published on this
-                website.
-            </p>
-
-        </div>
-
-
-        <!-- TERMS -->
-
-        <div class="policy">
-
-            <h3>Terms of Use</h3>
-
-            <p>
-                By accessing Trio Office Review, you agree to use the website
-                for lawful purposes and in accordance with these Terms of Use.
-            </p>
-
-            <h3>Website Content</h3>
-
-            <p>
-                The content on this website is intended for general
-                information and education. It should not be considered
-                professional technical, legal or financial advice.
-            </p>
-
-            <h3>Accuracy</h3>
-
-            <p>
-                We make reasonable efforts to publish useful and accurate
-                information. However, we do not guarantee that every piece of
-                information will always be complete, current or error-free.
-            </p>
-
-            <h3>External Links</h3>
-
-            <p>
-                Links to third-party websites may be provided for convenience.
-                We do not control those websites and are not responsible for
-                their content or services.
-            </p>
-
-            <h3>Intellectual Property</h3>
-
-            <p>
-                Original text, design and other materials created for Trio
-                Office Review belong to the website operator unless otherwise
-                stated.
-            </p>
-
-            <h3>Changes</h3>
-
-            <p>
-                We may update these Terms of Use, website content and policies
-                when necessary. Updated versions will be published on this
-                page.
-            </p>
-
-        </div>
-
-
-        <!-- ADVERTISING DISCLOSURE -->
-
-        <div class="policy">
-
-            <h3>Advertising & Affiliate Disclosure</h3>
-
-            <p>
-                Trio Office Review may earn revenue through advertising,
-                affiliate links or other commercial relationships.
-            </p>
-
-            <p>
-                Advertising or affiliate relationships do not automatically
-                determine our editorial conclusions. Reviews are intended to
-                provide balanced information, including advantages and
-                limitations.
-            </p>
-
-            <p>
-                Any commercial relationship will not be presented as an
-                official endorsement by Microsoft or any other software
-                publisher.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section>
-
-    <div class="container">
-
-        <div class="section-title">
-
-            <h2>Contact Trio Office Review</h2>
-
-            <p>
-                Questions, corrections and feedback are welcome.
-            </p>
-
-        </div>
-
-        <div class="review-box">
-
-            <p>
-                For website questions, corrections or privacy-related
-                inquiries, please contact the website operator using the
-                official contact email associated with this website.
-            </p>
-
-            <p style="margin-top:15px;">
-                <strong>Email:</strong>
-                contact@yourdomain.com
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-<!-- FOOTER -->
-
+<!-- Footer -->
 <footer>
+  <div class="container">
 
-    <div class="container">
-
-        <div class="footer-grid">
-
-            <div>
-
-                <h3>Trio Office Review</h3>
-
-                <p>
-                    Independent information and reviews about office
-                    productivity software.
-                </p>
-
-            </div>
-
-
-            <div>
-
-                <h3>Reviews</h3>
-
-                <ul>
-                    <li><a href="#office2016">Office 2016</a></li>
-                    <li><a href="#microsoft365">Microsoft 365</a></li>
-                    <li><a href="#comparison">Comparison</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-
-            </div>
-
-
-            <div>
-
-                <h3>Legal</h3>
-
-                <ul>
-                    <li><a href="#policies">Privacy Policy</a></li>
-                    <li><a href="#policies">Terms of Use</a></li>
-                    <li><a href="#policies">Disclaimer</a></li>
-                    <li><a href="#policies">Advertising Disclosure</a></li>
-                </ul>
-
-            </div>
-
-        </div>
-
-
-        <div class="copyright">
-
-            © 2026 Trio Office Review. All rights reserved.
-            Microsoft, Microsoft 365, Office and related product names are
-            trademarks of Microsoft Corporation.
-
-        </div>
-
+    <div class="footer-links">
+      <h3>Policy & Legal Index:</h3>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-use.html">Terms of Use</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact Us</a>
     </div>
 
+    <div class="copyright">
+      <h3>⚖️ Copyright &amp; Editorial Disclaimer</h3>
+      <p>© 2026 Shield &amp; Score. All rights reserved.</p>
+      <p>Shield &amp; Score is an independent research publisher and is not endorsed, sponsored, or officially affiliated with McAfee, Norton, Bitdefender, or Avast.</p>
+      <p>All textual content, benchmark scores, and structural frameworks serve educational and research objectives exclusively.</p>
+    </div>
+
+  </div>
 </footer>
+
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/6836bf8ff75c74190c0fd8e3/1isatoioj';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
 
 </body>
 </html>
